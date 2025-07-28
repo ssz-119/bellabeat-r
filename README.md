@@ -4,11 +4,20 @@ This is the final capstone project for the Google Data Analytics Professional Ce
 
 **Business Task:** Analyze smart device usage data from non-Bellabeat consumers to identify user behavior patterns and apply to Bellabeat’s digital marketing strategies
 
+## Table of Contents
+- [Tools Used](#tools-used)
+- [Analysis Process](#analysis-process)
+- [Dataset](#dataset)
+- [Key Insights](#key-insights)
+- [Business Recommendations](#business-recommendations)
+- [Sleep Duration vs. Time in Bed](#sleep-duration-vs-time-in-bed)
+- [Step Count Histogram](#step-count-histogram)
+
 ## Tools Used
 - R
 - dplyr, ggplot2
 
-## Steps Taken
+## Analysis Process
 - Data Cleaning and Wrangling
 - Exploratory Data Analysis
 - Visualization
@@ -18,18 +27,6 @@ This is the final capstone project for the Google Data Analytics Professional Ce
 The dataset was public Fitbit data from 33 users over 30 days.
 
 **Key Files Used:** dailyActivity_merged.csv and sleepDay_merged.csv
-
-## Sleep Duration vs. Time in Bed
-
-This scatterplot highlights sleep efficiency (time asleep / time in bed) where a red-dashed referenced line indicates perfect efficiency (every minute in bed was spent asleep).
-
-![Sleep Duration vs. Time in Bed](sleep_efficiency_scatterplot.png)
-
-## Step Count Histogram
-
-This histogram displays variability in physical activity over time across all recorded observations.
-
-![Steps Count Histogram](steps_histogram.png)
 
 ## Key Insights
 - Many users still fall in the high risk sedentary lifestyle despite being physically active on paper.
@@ -41,6 +38,19 @@ This histogram displays variability in physical activity over time across all re
 - Highlight Sleep Tracking as a Core Feature
 - Leverage “Somewhat Active” as the Ideal Lifestyle Tier
 
+## Sleep Duration vs. Time in Bed
+
+This scatterplot highlights sleep efficiency (time asleep / time in bed) where a red-dashed referenced line indicates perfect efficiency (every minute in bed was spent asleep).
 
 
+<img src="sleep_efficiency_scatterplot.png" alt="Sleep Duration vs. Time in Bed" width="600"/>
 
+## Step Count Histogram
+
+This histogram displays variability in physical activity over time across all recorded observations.
+
+
+<img src="steps_histogram.png" alt="Step Count Histogram" width="600"/>
+
+
+**View the full code in [bellabeat_analysis.R]()**
