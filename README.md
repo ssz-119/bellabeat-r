@@ -7,7 +7,8 @@ This is the final capstone project for the Google Data Analytics Professional Ce
 **Business
 ## Table of Contents
 - [Tools Used](#tools-used)
-- [Dataset](#dataset)
+- [Techniques Used](#techniques-used)
+- [Data Overview and Preparation](#data-overview-and-preparation)
 - [Analysis Process](#analysis-process)
 - [Analysis Questions Explored](#analysis-questions-explored)
 - [Key Insights](#key-insights)
@@ -16,20 +17,36 @@ This is the final capstone project for the Google Data Analytics Professional Ce
 - Visualizations
   - [Scatterplot: Sleep Duration vs. Time in Bed](#sleep-duration-vs-time-in-bed)
   - [Histogram: Total Daily Steps](#total-daily-steps)
-  - [Stacked Bar Chart: User Distribution by Sleep and Activity Level](#User-Distribution-by-Sleep-and-Activity-Level.png)
+  - [Stacked Bar Chart: User Distribution by Sleep and Activity Level](#user-distribution-by-sleep-and-activity-level)
 - [Data Limitations](#data-limitations)
 - [Links and References](#links-and-references)
   - [Works Cited](#works-cited)
 
 ## Tools Used
 - R
-- dplyr, ggplot2
+- dplyr, ggplot2, tidyverse, janitor, lubridate, tidyr
 
-## Dataset
+## Techniques Used
+- Data Cleaning and Transformation
+- EDA(Exploratory Data Analysis)
+- Grouped Data Aggregation
+- Descriptive Statistics
+- Correlation Testing
+- Data Visualization
+
+## Data Overview and Preparation
 The dataset was public Fitbit data from 33 users over 30 days.
 
 **Key Files Used:** dailyActivity_merged.csv and sleepDay_merged.csv
 
+**Data Transformations:** 
+1. Added sleep_efficiency column (total_time_asleep / total_time_in_bed)
+2. Converted dates to proper date format
+3. Merged sleep and activity data by user ID and date
+4. Created summary dataset with average daily metrics per user
+5. Categorized users by activity, sleep, and sendentary levels
+6. Converted categories to factor variables
+   
 ## Analysis Process
 - Data Cleaning and Wrangling
 - Exploratory Data Analysis
@@ -55,7 +72,7 @@ The dataset was public Fitbit data from 33 users over 30 days.
 
 ## Key Insights
 - Many users still fall in the high risk sedentary lifestyle despite being physically active on paper.
-- Users show high sleep efficiency (mean = 0.92) but insufficient sleep duration—averaging only about 6 hours per night.
+- Users show high sleep efficiency (mean = 0.92) but insufficient sleep duration. The mean is only about 6 hours per night.
 - The “somewhat active” group had the highest proportion of users meeting recommended sleep levels, representing a realistic and balanced user profile.
 
 ## Business Recommendations
@@ -65,9 +82,9 @@ The dataset was public Fitbit data from 33 users over 30 days.
 
 ## Statistical Analysis
 
-A Pearson correlation test showed a strong positive relationship between total steps and calories burned (r = 0.82), suggesting that increased physical activity significantly contributes to energy expenditure.
+A *Kendell correlation test* showed a moderate negative relationship between total steps and sendentary minutes (r = -0.32), suggesting an inverse relationship. Users who take more steps during the day tend to spend less time being sedentary. 
 
-Another test between time in bed and time asleep revealed a very strong correlation (r = 0.94), indicating high sleep efficiency overall.
+Although correlation tests were also ran for other variables, the rest resulted in weak or insignificant relationships.
 
 ## Sleep Duration vs. Time in Bed
 
