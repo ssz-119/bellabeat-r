@@ -4,12 +4,10 @@ This is the final capstone project for the Google Data Analytics Professional Ce
 
 **Business Task:** Analyze smart device usage data from non-Bellabeat consumers to identify user behavior patterns and apply to Bellabeat’s digital marketing strategies
 
-**Business
 ## Table of Contents
 - [Tools Used](#tools-used)
 - [Techniques Used](#techniques-used)
 - [Data Overview and Preparation](#data-overview-and-preparation)
-- [Analysis Process](#analysis-process)
 - [Analysis Questions Explored](#analysis-questions-explored)
 - [Key Insights](#key-insights)
 - [Business Recommendations](#business-recommendations)
@@ -28,7 +26,7 @@ This is the final capstone project for the Google Data Analytics Professional Ce
 
 ## Techniques Used
 - Data Cleaning and Transformation
-- EDA(Exploratory Data Analysis)
+- EDA (Exploratory Data Analysis)
 - Grouped Data Aggregation
 - Descriptive Statistics
 - Correlation Testing
@@ -46,12 +44,6 @@ The dataset was public Fitbit data from 33 users over 30 days.
 4. Created summary dataset with average daily metrics per user
 5. Categorized users by activity, sleep, and sendentary levels
 6. Converted categories to factor variables
-   
-## Analysis Process
-- Data Cleaning and Wrangling
-- Exploratory Data Analysis
-- Visualization
-- Insights & Recommendations
 
 ## Analysis Questions Explored
 
@@ -109,23 +101,21 @@ This stacked bar chart shows the proportions of users across the different sleep
 
 ## Data Limitations
 
-- Lacks demographic variables (gender, age, geographic location) and
+- Lacks demographic variables (gender, age, geographic location)
 - Difficult to access whether participants align with Bellabeat's target customer profile
-- Outdated data collected in 2016
+- Outdated, collected in 2016
 - Very small sample size (33 users from activity dataset, 24 users from sleep dataset, 24 combined dataset)
-- Mismatch in features, does not include stress levels and menstrual cycle
+- Mismatch in Bellabeat Leaf product features, does not include tracking of stress levels and menstrual cycle
 
 ## Links and References
 
 - View the full Bellabeat Capstone Report [here](Bellabeat_Capstone_Report.pdf)
-- View the full code in [bellabeat_analysis.R]()
+- View the full code in [here](bellabeat_analysis.R)
 
 ### Works Cited
-Tudor-Locke, Catrine, and David R Bassett. “How Many Steps/Day Are Enough?” Sports Medicine, vol. 34, no. 1, 2004, pp. 1–8, pubmed.ncbi.nlm.nih.gov/14715035/, https://doi.org/10.2165/00007256-200434010-00001.
-
-
-Chaput, Jean-Philippe, et al. “Sleeping Hours: What Is the Ideal Number and How Does Age Impact This?” Nature and Science of Sleep, vol. 10, no. 10, 27 Nov. 2018, pp. 421–430, www.ncbi.nlm.nih.gov/pmc/articles/PMC6267703/, https://doi.org/10.2147/nss.s163071.
-
 
 Barrell, Amanda . “Sitting down All Day: Consequences, Treatment, and Prevention.” Www.medicalnewstoday.com, 9 June 2023, www.medicalnewstoday.com/articles/sitting-down-all-day#how-long-is-too-long.
 
+Chaput, Jean-Philippe, et al. “Sleeping Hours: What Is the Ideal Number and How Does Age Impact This?” Nature and Science of Sleep, vol. 10, no. 10, 27 Nov. 2018, pp. 421–430, www.ncbi.nlm.nih.gov/pmc/articles/PMC6267703/, https://doi.org/10.2147/nss.s163071.
+
+Tudor-Locke, Catrine, and David R Bassett. “How Many Steps/Day Are Enough?” Sports Medicine, vol. 34, no. 1, 2004, pp. 1–8, pubmed.ncbi.nlm.nih.gov/14715035/, https://doi.org/10.2165/00007256-200434010-00001.
